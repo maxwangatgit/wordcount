@@ -1,0 +1,10 @@
+<h1>字数统计,总字数为{{total_count}}字</h1>
+<h2>你的输入文本</h2>>
+{{text}}
+<h2>出现频率</h2>>
+{% for word,count in sorted_word %}
+    字符：{{word}}   出现频率：{{count}} 
+    <br>
+{% endfor %}
+
+
